@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Post Job | FreelanceHub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <nav class="bg-white p-4 shadow-md flex justify-between">
+    <div class="text-xl font-bold text-blue-700">FreelanceHub</div>
+    <div class="space-x-4">
+      <a href="index.html">Home</a>
+      <a href="freelancers.html">Freelancers</a>
+      <a href="post-job.html">Post Job</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="wallet.html">Wallet</a>
+    </div>
+  </nav>
+
+  <div class="p-8 max-w-2xl mx-auto bg-white shadow rounded">
+    <h2 class="text-2xl font-bold mb-6">Post a Job</h2>
+    <form>
+        <label>Title</label>
+      <input type="text" class="w-full p-2 border mb-4 rounded" placeholder="Job Title">
+      <label>Describe</label>
+      <textarea class="w-full p-2 border mb-4 rounded" placeholder="Describe your project"></textarea>
+   
+
+<div>
+    <label>Category</label><br>
+  <select id="category" style="width: 100%; padding: 10px; border: 1px solid black; border-radius: 5px;">
+    <option value="" disabled selected hidden>Enter the category</option>
+    <option value="web">Web Development</option>
+    <option value="design">Graphic Design</option>
+    <option value="writing">Content Writing</option>
+    <option value="marketing">Digital Marketing</option>
+  </select>
+</div><br>
+
+
+
+      <label>Budget</label>
+      <input type="number" class="w-full p-2 border mb-4 rounded" placeholder="Budget">
+      <label>Timeline</label>
+      <input type="number" class="w-full p-2 border mb-4 rounded" placeholder="Timeline (days)">
+      <div class="mb-3">
+        <label>Upload Files (optional)</label><br>
+        <input type="file" class="form-control">
+      </div>
+      <button class="bg-blue-600 text-white px-4 py-2 rounded">Post</button>
+    </form>
+  </div>
+</body>
+</html>
